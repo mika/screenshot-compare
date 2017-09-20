@@ -13,6 +13,24 @@ import (
 	_ "image/png"
 )
 
+const USAGE = `
+Usage: ./subimage <baseimage.png> <refimage.png> <timeout>
+  Compare baseimage with refimage within timeout.
+
+  Returns an exit code in [0,101]
+     101 ... timeout reached
+     100 ... no equivalence (too different, different dimensions)
+     0   ... no differences (every pixel has same RGB value)
+
+  Timeout needs to be an integer followed by a flag; one of 'ism'.
+  e.g. '2s' or '2' means 2 seconds, i for milliseconds and m for minute
+
+  Pixels with a positive alpha value are compared in relation
+  to the alpha value. A transparent image of same dimension
+  is equivalent to every other image. Alpha values in the base image are ignored.
+  The implementation uses floating point number; subject to rounding errors
+`
+
 // Img represents an image with explicit
 // width and height values
 type Img struct {
@@ -120,21 +138,7 @@ func main() {
 
 	// CLI options
 	if len(os.Args) != 4 {
-		fmt.Println("Usage: ./subimage <baseimage.png> <refimage.png> <timeout>")
-		fmt.Println("  Compare baseimage with refimage within timeout.")
-		fmt.Println("")
-		fmt.Println("  Returns an exit code in [0,101]")
-		fmt.Println("     101 ... timeout reached")
-		fmt.Println("     100 ... no equivalence (too different, different dimensions)")
-		fmt.Println("     0   ... no differences (every pixel has same RGB value)")
-		fmt.Println("")
-		fmt.Println("  Timeout needs to be an integer followed by a flag; one of 'ism'.")
-		fmt.Println("  e.g. '2s' or '2' means 2 seconds, i for milliseconds and m for minute")
-		fmt.Println("")
-		fmt.Println("  Pixels with a positive alpha value are compared in relation")
-		fmt.Println("  to the alpha value. A transparent image of same dimension")
-		fmt.Println("  is equivalent to every other image. Alpha values in the base image are ignored.")
-		fmt.Println("  The implementation uses floating point number; subject to rounding errors")
+		fmt.Println(USAGE)
 		os.Exit(1)
 	}
 
