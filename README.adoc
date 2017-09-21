@@ -73,6 +73,8 @@ Changelog
   goroutine support, timeout argument, slight performance improvement
 1.0.0::
   complete rewrite, `--wait` and `--timeout` parameters, `Y'UV` support
+1.0.1::
+  improved README with illustrations
 
 Issues
 ------
