@@ -14,7 +14,7 @@ func init() {
 
 	FILES["g"] = "google_query_screenshot.png"
 	FILES["g_transparent"] = "google_query_transparent.png"
-	FILES["grml_website"] = "grml_website.png"
+	FILES["grmlforensic_website"] = "grmlforensic_contact_website.png"
 	FILES["grml_kB"] = "grml_booting_totalmemory_kB.png"
 	FILES["grml_MB"] = "grml_booting_totalmemory_MB.png"
 	FILES["grmlf_bo_back"] = "grmlforensic_bootoptions_backtomainmenu.png"
@@ -74,12 +74,12 @@ func TestEquality(t *testing.T) {
 func TestDifferentImages(t *testing.T) {
 	s := defaultSettings()
 	s.BaseImg = FILES["g"]
-	s.RefImg = FILES["grml_website"]
+	s.RefImg = FILES["grmlforensic_website"]
 	diff, err := CompareImages(s)
 	if err != nil {
 		t.Log(err)
 	}
-	if diff <= 0.5 {
+	if diff <= 0.1 {
 		t.Fatalf("Completely different images must return high difference; got %f", diff)
 	}
 }
