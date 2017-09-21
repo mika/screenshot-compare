@@ -12,6 +12,8 @@ func init() {
 	FILES = make(map[string]string)
 	folder := "tests/"
 
+	FILES["black"] = "black.png"
+	FILES["white"] = "white.png"
 	FILES["g"] = "google_query_screenshot.png"
 	FILES["g_transparent"] = "google_query_transparent.png"
 	FILES["grmlforensic_website"] = "grmlforensic_contact_website.png"
@@ -80,7 +82,20 @@ func TestDifferentImages(t *testing.T) {
 		t.Log(err)
 	}
 	if diff <= 0.1 {
-		t.Fatalf("Completely different images must return high difference; got %f", diff)
+		t.Fatalf("Different images must return high difference; got %f", diff)
+	}
+}
+
+func TestTotallyDifferentImages(t *testing.T) {
+	s := defaultSettings()
+	s.BaseImg = FILES["black"]
+	s.RefImg = FILES["white"]
+	diff, err := CompareImages(s)
+	if err != nil {
+		t.Log(err)
+	}
+	if diff <= 0.9 {
+		t.Fatalf("Totally different images must return very high difference; got %f", diff)
 	}
 }
 

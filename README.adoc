@@ -1,5 +1,5 @@
-README
-======
+README image::https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[]
+=========================================================================================
 
 :author: grml solutions
 :version: 1.0.0
