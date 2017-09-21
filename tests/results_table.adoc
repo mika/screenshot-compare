@@ -1,215 +1,37 @@
 Score results
 =============
 
+1. `../tests/black.png`
+2. `../tests/google_query_screenshot.png`
+3. `../tests/google_query_transparent.png`
+4. `../tests/grml_booting_totalmemory_kB.png`
+5. `../tests/grml_booting_totalmemory_MB.png`
+6. `../tests/grmlforensic_bootoptions_backtomainmenu.png`
+7. `../tests/grmlforensic_bootoptions_debugmode.png`
+8. `../tests/grmlforensic_bootsplash_23sec.png`
+9. `../tests/grmlforensic_bootsplash_30sec.png`
+10. `../tests/grmlforensic_bootsplash_graphicalmode.png`
+11. `../tests/grmlforensic_bootsplash_selection_transparent.png`
+12. `../tests/grmlforensic_contact_website.png`
+13. `../tests/results_table.adoc`
+14. `../tests/white.png`
+
 |===
-|
-|black.png
-|google_query_screenshot.png
-|google_query_transparent.png
-|grml_booting_totalmemory_kB.png
-|grml_booting_totalmemory_MB.png
-|grmlforensic_bootoptions_backtomainmenu.png
-|grmlforensic_bootoptions_debugmode.png
-|grmlforensic_bootsplash_23sec.png
-|grmlforensic_bootsplash_30sec.png
-|grmlforensic_bootsplash_graphicalmode.png
-|grmlforensic_bootsplash_selection_transparent.png
-|grmlforensic_contact_website.png
-|white.png
-
-|black.png
-|0 %
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|100 %
-
-|google_query_screenshot.png
-|dimensions mismatch
-|0 %
-|0 %
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|41 %
-|dimensions mismatch
-
-|google_query_transparent.png
-|dimensions mismatch
-|1 %
-|0 %
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|41 %
-|dimensions mismatch
-
-|grml_booting_totalmemory_kB.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|0 %
-|0 %
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-
-|grml_booting_totalmemory_MB.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|0 %
-|0 %
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-
-|grmlforensic_bootoptions_backtomainmenu.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|14 %
-|16 %
-|17 %
-|17 %
-|18 %
-|12 %
-|dimensions mismatch
-|dimensions mismatch
-
-|grmlforensic_bootoptions_debugmode.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|16 %
-|13 %
-|18 %
-|18 %
-|18 %
-|12 %
-|dimensions mismatch
-|dimensions mismatch
-
-|grmlforensic_bootsplash_23sec.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|17 %
-|18 %
-|13 %
-|14 %
-|16 %
-|10 %
-|dimensions mismatch
-|dimensions mismatch
-
-|grmlforensic_bootsplash_30sec.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|17 %
-|18 %
-|14 %
-|13 %
-|16 %
-|10 %
-|dimensions mismatch
-|dimensions mismatch
-
-|grmlforensic_bootsplash_graphicalmode.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|18 %
-|18 %
-|16 %
-|16 %
-|14 %
-|10 %
-|dimensions mismatch
-|dimensions mismatch
-
-|grmlforensic_bootsplash_selection_transparent.png
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|21 %
-|21 %
-|19 %
-|19 %
-|19 %
-|10 %
-|dimensions mismatch
-|dimensions mismatch
-
-|grmlforensic_contact_website.png
-|dimensions mismatch
-|37 %
-|36 %
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|17 %
-|dimensions mismatch
-
-|white.png
-|100 %
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|dimensions mismatch
-|0 %
+|     |1.  |2.  |3.  |4.  |5.  |6.  |7.  |8.  |9.  |10.  |11.  |12.  |13.  |14.  
+|1.   |0 %  |*     |*     |*     |*     |*     |*     |*     |*     |*     |*     |*     |1 %  |100 %  
+|2.   |*     |0 %  |0 %  |*     |*     |*     |*     |*     |*     |*     |*     |39 %  |1 %  |*     
+|3.   |*     |1 %  |0 %  |*     |*     |*     |*     |*     |*     |*     |*     |40 %  |1 %  |*     
+|4.   |*     |*     |*     |0 %  |0 %  |*     |*     |*     |*     |*     |*     |*     |1 %  |*     
+|5.   |*     |*     |*     |0 %  |0 %  |*     |*     |*     |*     |*     |*     |*     |1 %  |*     
+|6.   |*     |*     |*     |*     |*     |0 %  |3 %  |4 %  |4 %  |6 %  |3 %  |*     |1 %  |*     
+|7.   |*     |*     |*     |*     |*     |3 %  |0 %  |7 %  |7 %  |6 %  |3 %  |*     |1 %  |*     
+|8.   |*     |*     |*     |*     |*     |4 %  |7 %  |0 %  |0 %  |4 %  |0 %  |*     |1 %  |*     
+|9.   |*     |*     |*     |*     |*     |4 %  |7 %  |0 %  |0 %  |4 %  |0 %  |*     |1 %  |*     
+|10.   |*     |*     |*     |*     |*     |6 %  |6 %  |4 %  |4 %  |0 %  |0 %  |*     |1 %  |*     
+|11.   |*     |*     |*     |*     |*     |14 %  |14 %  |10 %  |10 %  |10 %  |0 %  |*     |1 %  |*     
+|12.   |*     |39 %  |38 %  |*     |*     |*     |*     |*     |*     |*     |*     |0 %  |1 %  |*     
+|13.   |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  |1 %  
+|14.   |100 %  |*     |*     |*     |*     |*     |*     |*     |*     |*     |*     |*     |1 %  |0 %  
 |===
 
+`*` dimensions mismatch
