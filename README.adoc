@@ -11,6 +11,7 @@ What is it about?
 
 You can compare two image files and it will show a difference score between 0 and 1.
 Using transparent reference PNG images, you can also skip certain areas of the file.
+Unlike the title, you can compare arbitrary images, but our usecase is screenshot comparison.
 
 Why do you use it?
 ------------------
