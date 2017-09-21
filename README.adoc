@@ -1,8 +1,12 @@
-README image::https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[]
-=========================================================================================
+README
+======
 
-:author: grml solutions
-:version: 1.0.0
+author::
+  grml solutions
+version::
+  1.0.0
+travis state::
+  image::https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[]
 
 What?
 -----
