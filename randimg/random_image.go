@@ -11,7 +11,10 @@ import (
 	"time"
 )
 
+// WIDTH defines the width of the created image
 const WIDTH = 640
+
+// HEIGHT defines the height of the created image
 const HEIGHT = 400
 
 func euclideanDistance(x1, y1, x2, y2 int) float64 {
@@ -51,6 +54,7 @@ func drawRandom(img *image.RGBA, randNum int64) {
 	}
 }
 
+// Draw actually draws an image based on `randNum` and stores the result at `filepath`
 func Draw(filepath string, randNum int64) error {
 	img := image.NewRGBA(image.Rectangle{image.Point{0, 0}, image.Point{WIDTH, HEIGHT}})
 

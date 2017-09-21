@@ -1,10 +1,15 @@
-README image:https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[travis test result]
-==========================================================================================================
+README
+======
+
+link:https://img.shields.io/github/release/meisterluk/screenshot-compare.svg?style=flat-square[image:https://img.shields.io/github/release/meisterluk/screenshot-compare.svg?style=flat-square[Latest version]]
+link:https://godoc.org/github.com/meisterluk/screenshot-compare[image:https://godoc.org/github.com/meisterluk/screenshot-compare?status.svg[GoDoc]]
+link:https://travis-ci.org/meisterluk/screenshot-compare[image:https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[travis test result]]
+link:https://goreportcard.com/report/github.com/meisterluk/screenshot-compare[image:https://goreportcard.com/badge/github.com/meisterluk/screenshot-compare[Go Report Card]]
 
 author::
   grml solutions
 version::
-  1.0.0
+  1.0.1
 
 What is it about?
 -----------------
@@ -25,6 +30,19 @@ Especially software developers testing software might find this software useful.
 Consider that Mozilla Firefox's just got a link:https://developer.mozilla.org/en-US/Firefox/Headless_mode[headless mode] and soon you will be able to take screenshots.
 Chromium link:https://github.com/GoogleChrome/puppeteer[has it already]. So web developer might find it useful as well.
 We use it with link:https://www.virtualbox.org/wiki/Downloads[VirtualBox].
+
+How to install
+--------------
+
+You can run `go get`:
+
+[source,bash]
+go get github.com/meisterluk/screenshot-compare
+
+and start developing! 😊
+
+How to run
+----------
 
 Understanding the score
 -----------------------
@@ -57,7 +75,7 @@ If you want a binary classifier whether the images are similar,
 Source Code
 -----------
 
-The source code is available at link:https://github.com/mika/screenshot-compare/issues[Github].
+The source code is available at link:https://github.com/meisterluk/screenshot-compare/issues[Github].
 
 License
 -------
@@ -79,5 +97,4 @@ Changelog
 Issues
 ------
 
-Please report any issues on the link:https://github.com/mika/screenshot-compare/issues[Github issues page].
-
+Please report any issues on the link:https://github.com/meisterluk/screenshot-compare/issues[Github issues page].
