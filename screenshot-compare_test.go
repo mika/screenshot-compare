@@ -116,8 +116,8 @@ func TestRGBAndYUV(t *testing.T) {
 	}
 
 	// I only expect them to be different
-	if diffRGB != diffYUV {
-		t.Fatalf("Different images must return high difference; got %f", diff)
+	if diffRGB == diffYUV {
+		t.Fatalf("Expecting a difference between RGB and Y'UV; got %f and %f", diffRGB, diffYUV)
 	}
 }
 
