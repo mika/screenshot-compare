@@ -1,0 +1,47 @@
+README
+======
+
+:author: grml solutions
+:version: 1.0.0
+
+What?
+-----
+
+You can compare two image files and it will show a difference score between 0 and 1.
+Using transparent reference PNG images, you can also skip certain areas of the file.
+
+Why?
+----
+
+We take screenshots of running live systems and check whether they are (visually) in a certain state.
+
+Who?
+----
+
+Especially software developers testing software might find this software useful.
+Consider that Mozilla Firefox's just got a link:https://developer.mozilla.org/en-US/Firefox/Headless_mode[headless mode] and soon you will be able to take screenshots.
+
+Source Code
+-----------
+
+The source code is available at link:https://github.com/mika/screenshot-compare/issues[Github].
+
+Issues
+------
+
+Please report any issues on the link:https://github.com/mika/screenshot-compare/issues[Github issues page].
+
+License
+-------
+
+See link:LICENSE[the LICENSE file] (Hint: MIT license).
+
+Changelog
+---------
+
+0.0.1::
+  first release: PNG only, transparency support
+0.0.2::
+  goroutine support, timeout argument, slight performance improvement
+1.0.0::
+  complete rewrite, `--wait` and `--timeout` parameters, `Y'UV` support
