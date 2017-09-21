@@ -60,7 +60,7 @@ func TestDurationSpecifier(t *testing.T) {
 	test("5", time.Second*5)
 }
 
-func TestEquality(t *testing.T) {
+func TestEqualImages(t *testing.T) {
 	s := defaultSettings()
 	s.BaseImg = FILES["g"]
 	s.RefImg = FILES["g"]
@@ -96,6 +96,28 @@ func TestTotallyDifferentImages(t *testing.T) {
 	}
 	if diff <= 0.9 {
 		t.Fatalf("Totally different images must return very high difference; got %f", diff)
+	}
+}
+
+func TestRGBAndYUV(t *testing.T) {
+	s := defaultSettings()
+	s.ColorSpace = "RGB"
+	s.BaseImg = FILES["g"]
+	s.RefImg = FILES["grmlforensic_website"]
+	diffRGB, err := CompareImages(s)
+	if err != nil {
+		t.Log(err)
+	}
+
+	s.ColorSpace = "Y'UV"
+	diffYUV, err := CompareImages(s)
+	if err != nil {
+		t.Log(err)
+	}
+
+	// I only expect them to be different
+	if diffRGB != diffYUV {
+		t.Fatalf("Different images must return high difference; got %f", diff)
 	}
 }
 

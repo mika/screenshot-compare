@@ -13,10 +13,10 @@ You can compare two image files and it will show a difference score between 0 an
 Using transparent reference PNG images, you can also skip certain areas of the file.
 Unlike the title, you can compare arbitrary images, but our usecase is screenshot comparison.
 
-Why do you use it?
-------------------
+Why should I use it?
+--------------------
 
-We take screenshots of running live systems and check whether they are (visually) in a certain state.
+We take screenshots of running live systems and want to know, whether they are (visually) in a certain state.
 
 Who should use it?
 ------------------
@@ -24,6 +24,7 @@ Who should use it?
 Especially software developers testing software might find this software useful.
 Consider that Mozilla Firefox's just got a link:https://developer.mozilla.org/en-US/Firefox/Headless_mode[headless mode] and soon you will be able to take screenshots.
 Chromium link:https://github.com/GoogleChrome/puppeteer[has it already]. So web developer might find it useful as well.
+We use it with link:https://www.virtualbox.org/wiki/Downloads[VirtualBox].
 
 Understanding the score
 -----------------------
@@ -48,6 +49,10 @@ image:example_3.png[Y'UV score 100% for white/black and Y'UV score 42.76% for bl
 This image illustrates the transparency feature:
 
 image:example_4.png[difference 0% illustrating that areas with transparency in the reference areas are skipped]
+
+`PNG` and `JPEG` file formats can be processed.
+If you want a binary classifier whether the images are similar,
+`0.1` (i.e. `10%`) might be a suitable classifier.
 
 Source Code
 -----------
