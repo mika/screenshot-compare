@@ -1,0 +1,215 @@
+Score results
+=============
+
+|===
+|
+|black.png
+|google_query_screenshot.png
+|google_query_transparent.png
+|grml_booting_totalmemory_kB.png
+|grml_booting_totalmemory_MB.png
+|grmlforensic_bootoptions_backtomainmenu.png
+|grmlforensic_bootoptions_debugmode.png
+|grmlforensic_bootsplash_23sec.png
+|grmlforensic_bootsplash_30sec.png
+|grmlforensic_bootsplash_graphicalmode.png
+|grmlforensic_bootsplash_selection_transparent.png
+|grmlforensic_contact_website.png
+|white.png
+
+|black.png
+|0 %
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|100 %
+
+|google_query_screenshot.png
+|dimensions mismatch
+|0 %
+|0 %
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|41 %
+|dimensions mismatch
+
+|google_query_transparent.png
+|dimensions mismatch
+|1 %
+|0 %
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|41 %
+|dimensions mismatch
+
+|grml_booting_totalmemory_kB.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|0 %
+|0 %
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+
+|grml_booting_totalmemory_MB.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|0 %
+|0 %
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+
+|grmlforensic_bootoptions_backtomainmenu.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|14 %
+|16 %
+|17 %
+|17 %
+|18 %
+|12 %
+|dimensions mismatch
+|dimensions mismatch
+
+|grmlforensic_bootoptions_debugmode.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|16 %
+|13 %
+|18 %
+|18 %
+|18 %
+|12 %
+|dimensions mismatch
+|dimensions mismatch
+
+|grmlforensic_bootsplash_23sec.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|17 %
+|18 %
+|13 %
+|14 %
+|16 %
+|10 %
+|dimensions mismatch
+|dimensions mismatch
+
+|grmlforensic_bootsplash_30sec.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|17 %
+|18 %
+|14 %
+|13 %
+|16 %
+|10 %
+|dimensions mismatch
+|dimensions mismatch
+
+|grmlforensic_bootsplash_graphicalmode.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|18 %
+|18 %
+|16 %
+|16 %
+|14 %
+|10 %
+|dimensions mismatch
+|dimensions mismatch
+
+|grmlforensic_bootsplash_selection_transparent.png
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|21 %
+|21 %
+|19 %
+|19 %
+|19 %
+|10 %
+|dimensions mismatch
+|dimensions mismatch
+
+|grmlforensic_contact_website.png
+|dimensions mismatch
+|37 %
+|36 %
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|17 %
+|dimensions mismatch
+
+|white.png
+|100 %
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|dimensions mismatch
+|0 %
+|===
+
