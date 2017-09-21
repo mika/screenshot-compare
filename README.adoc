@@ -3,6 +3,7 @@ README
 
 link:https://img.shields.io/github/release/meisterluk/screenshot-compare.svg?style=flat-square[image:https://img.shields.io/github/release/meisterluk/screenshot-compare.svg?style=flat-square[Latest version]]
 link:https://godoc.org/github.com/meisterluk/screenshot-compare[image:https://godoc.org/github.com/meisterluk/screenshot-compare?status.svg[GoDoc]]
+link:LICENSE[image:https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square[Used LICENSE]]
 link:https://travis-ci.org/meisterluk/screenshot-compare[image:https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[travis test result]]
 link:https://goreportcard.com/report/github.com/meisterluk/screenshot-compare[image:https://goreportcard.com/badge/github.com/meisterluk/screenshot-compare[Go Report Card]]
 
