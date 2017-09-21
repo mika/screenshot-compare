@@ -45,6 +45,27 @@ and start developing! 😊
 How to run
 ----------
 
+1. Go to https://github.com/meisterluk/screenshot-compare
+2. Click on the Releases link
+   image:run_1.png[github releases]
+3. Scroll down, choose the download appropriate for your platform
+   image:run_2.png[Downloads]
+4. Once the download has finished, extract the files of the tar-gz archive
+5. Run the file screenshot-compare on the Terminal (cmd.exe for Windows users)
+   image:run_2.png[Terminal]
+
+One terminal example is the comparison of link:tests/grml_booting_totalmemory_kB.png[`grml_booting_totalmemory_kB.png`] and link:tests/grml_booting_totalmemory_MB.png[`grml_booting_totalmemory_MB.png`]:
+
+[code,bash]
+----
+$ ./screenshot-compare grml_booting_totalmemory_kB.png grml_booting_totalmemory_MB.png
+difference percentage:  0.017 %
+runtime:                79.263022ms
+----
+
+The exit code also shows the difference percentage.
+Run `screenshot-compare` without arguments to see the usage description for this.
+
 Understanding the score
 -----------------------
 
