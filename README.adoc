@@ -10,7 +10,7 @@ link:https://goreportcard.com/report/github.com/meisterluk/screenshot-compare[im
 author::
   grml solutions
 version::
-  1.0.1
+  1.0.2
 
 What is it about?
 -----------------
@@ -115,6 +115,8 @@ Changelog
   complete rewrite, `--wait` and `--timeout` parameters, `Y'UV` support
 1.0.1::
   improved README with illustrations
+1.0.2::
+  introduce README section "How to run"
 
 Issues
 ------
