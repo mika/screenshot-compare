@@ -225,7 +225,7 @@ func toYUV(r, g, b float64) (float64, float64, float64) {
 }
 
 func euclideanDistance(a, x, b, y, c, z float64) float64 {
-	return math.Sqrt(math.Pow(a-x, 2) + math.Pow(b-y, 2) + math.Pow(x-z, 2))
+	return math.Sqrt(math.Pow(a-x, 2) + math.Pow(b-y, 2) + math.Pow(c-z, 2))
 }
 
 // compareImages determines the difference score for two images
