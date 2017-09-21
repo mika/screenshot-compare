@@ -32,7 +32,7 @@ Understanding the score
 * We multiply the difference value by the alpha channel value of the reference image.
 * We evaluate the average over all pixels of the image. This is our image difference score.
 
-White and black provides the hugest difference:
+White and black provides the hugest difference (though 100% is not limited to black/white):
 
 image:example_1.png[score 100% for white/black and score 59.7% for black/blue]
 
@@ -53,11 +53,6 @@ Source Code
 
 The source code is available at link:https://github.com/mika/screenshot-compare/issues[Github].
 
-Issues
-------
-
-Please report any issues on the link:https://github.com/mika/screenshot-compare/issues[Github issues page].
-
 License
 -------
 
@@ -72,3 +67,9 @@ Changelog
   goroutine support, timeout argument, slight performance improvement
 1.0.0::
   complete rewrite, `--wait` and `--timeout` parameters, `Y'UV` support
+
+Issues
+------
+
+Please report any issues on the link:https://github.com/mika/screenshot-compare/issues[Github issues page].
+
