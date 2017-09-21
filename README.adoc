@@ -1,27 +1,52 @@
-README image:https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[]
-========================================================================================
+README image:https://api.travis-ci.org/meisterluk/screenshot-compare.svg?branch=master[travis test result]
+==========================================================================================================
 
 author::
   grml solutions
 version::
   1.0.0
 
-What?
------
+What is it about?
+-----------------
 
 You can compare two image files and it will show a difference score between 0 and 1.
 Using transparent reference PNG images, you can also skip certain areas of the file.
 
-Why?
-----
+Why do you use it?
+------------------
 
 We take screenshots of running live systems and check whether they are (visually) in a certain state.
 
-Who?
-----
+Who should use it?
+------------------
 
 Especially software developers testing software might find this software useful.
 Consider that Mozilla Firefox's just got a link:https://developer.mozilla.org/en-US/Firefox/Headless_mode[headless mode] and soon you will be able to take screenshots.
+Chromium link:https://github.com/GoogleChrome/puppeteer[has it already]. So web developer might find it useful as well.
+
+Understanding the score
+-----------------------
+
+* If the dimensions of the two images do not correspond, we reject.
+* We look at every individual pixel and determine a difference value between 0 and 1 based on the color.
+* We multiply the difference value by the alpha channel value of the reference image.
+* We evaluate the average over all pixels of the image. This is our image difference score.
+
+White and black provides the hugest difference:
+
+image:example_1.png[score 100% for white/black and score 59.7% for black/blue]
+
+These `randimg` images use similar colors, but the structures are slightly (left) or vastly (right) translated.
+
+image:example_2.png[score 37.29% for two similar images where structures are slightly translated and score 43.27% for similar structures but vastly translated]
+
+If you use the `Y'UV` color space, the score slightly changes (RGB provided 59.7% for black/blue):
+
+image:example_3.png[Y'UV score 100% for white/black and Y'UV score 42.76% for black/blue]
+
+This image illustrates the transparency feature:
+
+image:example_4.png[difference 0% illustrating that areas with transparency in the reference areas are skipped]
 
 Source Code
 -----------
