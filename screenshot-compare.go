@@ -13,6 +13,7 @@ import (
 	"time"
 )
 
+// USAGE for CLI
 const USAGE = `
 USAGE
 
@@ -65,8 +66,13 @@ The return code is an integer with min. 0 and max. 102:
   102   timeout reached
 `
 
+// WR as defined by standard BT.601 by CCIR
 const WR = float64(0.299)
+
+// WG as defined by standard BT.601 by CCIR
 const WG = float64(0.587)
+
+// WB as defined by standard BT.601 by CCIR
 const WB = float64(0.114)
 
 // Settings defines the application settings
@@ -106,7 +112,7 @@ func readDurationSpecifier(s string) (time.Duration, error) {
 
 	end := len(s) - 1
 	if '0' <= s[end] && s[end] <= '9' {
-		end += 1
+		end++
 	}
 
 	val, err := strconv.Atoi(s[:end])
@@ -173,7 +179,7 @@ func parseArguments(s *Settings, args []string) error {
 	if s.RefImg == "" {
 		count := 0
 		if s.BaseImg != "" {
-			count += 1
+			count++
 		}
 		return fmt.Errorf("expected 2 positional arguments; baseimage and reference image; got %d", count)
 	}
@@ -220,8 +226,8 @@ func toNRGBA(r, g, b, a uint32) (float64, float64, float64, float64) {
 // toYUV converts a RGB color to the Y'UV color space
 func toYUV(r, g, b float64) (float64, float64, float64) {
 	// https://en.wikipedia.org/wiki/YUV#SDTV_with_BT.601
-	y_ := WR*r + WG*g + WB*b
-	return y_, 0.492 * (b - y_), 0.877 * (r - y_)
+	yPrime := WR*r + WG*g + WB*b
+	return yPrime, 0.492 * (b - yPrime), 0.877 * (r - yPrime)
 }
 
 func euclideanDistance(a, x, b, y, c, z float64) float64 {
@@ -249,9 +255,9 @@ func compareImages(s *Settings, baseImg, refImg *img, yOffset, yCount int) (diff
 			case "RGB":
 				d = euclideanDistance(r1, r2, g1, g2, b1, b2) / 113510.0
 			case "Y'UV":
-				y_1, u1, v1 := toYUV(r1, g1, b1)
-				y_2, u2, v2 := toYUV(r2, g2, b2)
-				d = euclideanDistance(y_1, y_2, u1, u2, v1, v2) / 113510.0
+				yPrime1, u1, v1 := toYUV(r1, g1, b1)
+				yPrime2, u2, v2 := toYUV(r2, g2, b2)
+				d = euclideanDistance(yPrime1, yPrime2, u1, u2, v1, v2) / 113510.0
 			}
 
 			// NOTE only alpha channel of refImg is considered
@@ -271,6 +277,8 @@ func compareImages(s *Settings, baseImg, refImg *img, yOffset, yCount int) (diff
 	return diff, nil
 }
 
+// CompareImages compares the color values of the two images given in Settings
+// A similarity score between 0 and 1 is returned and nil or an error instance
 func CompareImages(s Settings) (float64, error) {
 	var baseImg, refImg img
 	if err := readImageMetadata(s.BaseImg, &baseImg); err != nil {
