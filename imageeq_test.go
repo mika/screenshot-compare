@@ -36,8 +36,11 @@ func defaultSettings() Settings {
 
 func TestDurationSpecifier(t *testing.T) {
 	test := func(teststr string, expected time.Duration) {
-		if dur, err := readDurationSpecifier(teststr); dur != expected {
+		dur, err := readDurationSpecifier(teststr)
+		if err != nil {
 			t.Log(err)
+		}
+		if dur != expected {
 			t.Fatalf("'%s' was not recognized by duration specifier parser", teststr)
 		}
 	}
@@ -58,9 +61,12 @@ func TestEquality(t *testing.T) {
 	s := defaultSettings()
 	s.BaseImg = FILES["g"]
 	s.RefImg = FILES["g"]
-	if diff, err := CompareImages(s); err != nil || diff > 0.0 {
+	diff, err := CompareImages(s)
+	if err != nil {
 		t.Log(err)
-		t.Fatalf("Same image must return difference %.2f; got %.2f", 0.0, diff)
+	}
+	if diff > 0.01 {
+		t.Fatalf("Same image must return difference %f; got %f", 0.0, diff)
 	}
 }
 
@@ -68,9 +74,12 @@ func TestDifferentImages(t *testing.T) {
 	s := defaultSettings()
 	s.BaseImg = FILES["g"]
 	s.RefImg = FILES["grml_MB"]
-	if diff, err := CompareImages(s); err != nil || diff <= 0.5 {
+	diff, err := CompareImages(s)
+	if err != nil {
 		t.Log(err)
-		t.Fatalf("Completely different images must return high difference; got %.2f", diff)
+	}
+	if diff <= 0.5 {
+		t.Fatalf("Completely different images must return high difference; got %f", diff)
 	}
 }
 
@@ -78,8 +87,11 @@ func TestTransparency(t *testing.T) {
 	s := defaultSettings()
 	s.BaseImg = FILES["g"]
 	s.RefImg = FILES["g_transparent"]
-	if diff, err := CompareImages(s); err != nil || diff < 0.1 {
+	diff, err := CompareImages(s)
+	if err != nil {
 		t.Log(err)
-		t.Fatalf("Base image must match given transparent reference image; got difference of %.2f", diff)
+	}
+	if diff > 0.01 {
+		t.Fatalf("Base image must match given transparent reference image; got difference of %f", diff)
 	}
 }
